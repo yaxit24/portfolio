@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
 
@@ -23,8 +24,7 @@
 
 
     </header>
-    <body>
-        <div class="main_body">
+    <div class="main_body">
             <div class="left_main">
             <h1 class="first_p_left">Hello,<br>
             This is<span style="color: rgb(243, 7, 184);"> Yakshit Savaliya</span>, I'm a
@@ -164,23 +164,69 @@
             <div class="multi-color-line1"></div>
         </div>
         <div class="main_body3">
-            <div class="main_body3_skills">
-                <div class="element">1</div>
-                <div class="element">2</div>
-                <div class="element">3</div>
+            <h2 class="skills-heading">Skills & Technologies</h2>
+            <div class="skills-container">
+                <!-- Languages Section with Horizontal Scroll -->
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <div class="skills-scroll">
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="element">4</div>
-                <div class="element">5</div>
-                <div class="element">6</div>
-                <div class="element">7</div>
+                <!-- Frontend Technologies -->
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
 
-
-
+                <!-- Tools & Others -->
+                <div class="skills-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
         </div>
 
         </div>
@@ -205,8 +251,15 @@
 
 
         
-    </body>
+    </div>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
 </body>
 </html>
